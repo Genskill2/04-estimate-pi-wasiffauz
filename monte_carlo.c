@@ -38,6 +38,19 @@ int main(void) {
     }
   }
 }
-
+float mc_pi(int n){
+float circle = 0;
+  float square = 0;
+  float x,y;
+  for (int i=1;i<=n;i++){
+  x = frandom();
+  y = frandom();
+    if(((x*x)+(y*y)<=1)){
+    circle++;}
+    square++;
+  }
+  float pi = 4*circle/square;
+  return pi;
+}
 
 
